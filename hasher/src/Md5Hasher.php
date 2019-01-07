@@ -15,6 +15,7 @@ class Md5Hasher
     public function make($value, array $options = [])
     {   
         $a = 1;
+        $a = 1;
         $salt = isset($options['salt']) ? $options['salt'] : '';
         return hash('md5', $value . $salt);
     }
